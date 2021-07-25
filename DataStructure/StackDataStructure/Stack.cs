@@ -8,14 +8,14 @@ namespace StackDataStructure
 {
     public class Stack
     {
-        private int[] array;
+        private int[] items;
         private int top;
         private int capacity;
 
         // Create a stack
         public Stack(int size)
         {
-            array = new int[size];
+            items = new int[size];
             capacity = size;
             top = -1;
         }
@@ -28,8 +28,8 @@ namespace StackDataStructure
                 Console.WriteLine("Stack is full.");
             }
 
-            Console.WriteLine($"Adding item: {item}");
-            array[++top] = item;
+            items[++top] = item;
+            Console.WriteLine($"Added item: {item}");
         }
 
         // Remove an item from stack
@@ -40,7 +40,7 @@ namespace StackDataStructure
                 Console.WriteLine("Stack is empty");
             }
 
-            return array[top--];
+            return items[top--];
         }
 
         // Check stack is full
@@ -66,7 +66,7 @@ namespace StackDataStructure
         {
             for (int i = 0; i <= top; i++)
             {
-                Console.WriteLine($"Item : {array[i]}");
+                Console.WriteLine($"Item : { items[i] }");
             }
         }
     }
