@@ -4,23 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QueueDataStructure
+namespace CircularQueueDataStructure
 {
-    public class Queue
+    public class CircularQueue
     {
         private int[] items;
         private int capacity;
         private int front;
         private int rear;
 
-        // Create a queue
-        public Queue(int size)
+        // Create a circualr queue
+        public CircularQueue(int size)
         {
             items = new int[size];
             front = -1;
             rear = -1;
             capacity = size;
-        }       
+        }
 
         // Add an item into queue
         public void Enqueue(int item)
@@ -33,13 +33,15 @@ namespace QueueDataStructure
             else
             {
                 if (front == -1)
+                {
                     front = 0;
+                }
 
-                rear++;
+                rear = (rear + 1) % capacity;
                 items[rear] = item;
+
+                Console.WriteLine($"Added item: {item}");
             }
-            
-            Console.WriteLine($"Added item: {item}");
         }
 
         // Remove an item from queue
@@ -54,21 +56,22 @@ namespace QueueDataStructure
                 return item;
             }
 
-            item = items[front];
-
-            // Queue has only one element, so we reset the queue after delete the item
-            if (front >= rear)
-            {
-                front = -1;
-                rear = -1;
-            }
-
             else
             {
-                front++;
-            }
+                item = items[front];
 
-            Console.WriteLine($"Deleted item: {item}");
+                // Queue has only one element, so we reset the queue after delete the item
+                if (front == rear)
+                {
+                    front = -1;
+                    rear = -1;
+                }
+
+                else
+                {
+                    front = (front + 1) % capacity;
+                }
+            }
 
             return item;
         }
@@ -76,7 +79,7 @@ namespace QueueDataStructure
         // Check queue is empty
         public bool IsEmpty()
         {
-            if (front == -1 && rear == - 1)
+            if (front == -1 && rear == -1)
             {
                 return true;
             }
@@ -88,6 +91,11 @@ namespace QueueDataStructure
         public bool IsFull()
         {
             if (front == 0 && rear == capacity - 1)
+            {
+                return true;
+            }
+
+            if (front == rear + 1)
             {
                 return true;
             }
@@ -109,18 +117,13 @@ namespace QueueDataStructure
                 Console.WriteLine("Queue is empty");
             }
 
-            else
+            for (int i = front; i != rear; i = (i + 1) % capacity)
             {
-                Console.WriteLine($"Front index: { front }");
-                Console.WriteLine("Items -> ");
-
-                for (int i = front; i <= rear; i++)
-                {
-                    Console.WriteLine($"{ items[i] }  ");
-                }
-
-                Console.WriteLine($"Rear index: { rear }");
+                Console.WriteLine($"{ items[i] }  ");
+                Console.WriteLine($"{ items[i] }");
             }
+
+            Console.WriteLine($"Rear { rear }");
         }
     }
 }

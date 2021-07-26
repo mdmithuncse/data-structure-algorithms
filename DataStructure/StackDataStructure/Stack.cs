@@ -46,13 +46,23 @@ namespace StackDataStructure
         // Check stack is full
         public bool IsFull()
         {
-            return top == capacity - 1;
+            if (top == capacity - 1)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         // Check stack is empty
         public bool IsEmpty()
         {
-            return top == -1;
+            if (top == -1)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         // Return the size of the stack
