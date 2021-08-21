@@ -13,13 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueDataStructure", "DataS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircularQueueDataStructure", "DataStructure\CircularQueueDataStructure\CircularQueueDataStructure.csproj", "{6D53AECC-ACA1-44AE-96F0-00C4B9889AE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeTraversal", "Algorithms\TreeTraversal\TreeTraversal.csproj", "{5370025E-76A9-4687-96DC-41BE30D8F3BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeTraversal", "Algorithms\TreeTraversal\TreeTraversal.csproj", "{5370025E-76A9-4687-96DC-41BE30D8F3BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullBinaryTree", "Algorithms\FullBinaryTree\FullBinaryTree.csproj", "{82390D8B-66AF-45A3-8C17-E8B12FF99872}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FullBinaryTree", "Algorithms\FullBinaryTree\FullBinaryTree.csproj", "{82390D8B-66AF-45A3-8C17-E8B12FF99872}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfectBinaryTree", "Algorithms\PerfectBinaryTree\PerfectBinaryTree.csproj", "{AA6F4D62-3C5D-4503-84D7-EFCE1153BB41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerfectBinaryTree", "Algorithms\PerfectBinaryTree\PerfectBinaryTree.csproj", "{AA6F4D62-3C5D-4503-84D7-EFCE1153BB41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompleteBinaryTree", "Algorithms\CompleteBinaryTree\CompleteBinaryTree.csproj", "{5E784ABD-8166-49CB-A521-EE7518184BA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompleteBinaryTree", "Algorithms\CompleteBinaryTree\CompleteBinaryTree.csproj", "{5E784ABD-8166-49CB-A521-EE7518184BA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Research", "Research", "{957DE092-05BD-49BC-B77F-41D5CFA2FC5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSumArray", "Research\TwoSumArray\TwoSumArray.csproj", "{E1A02AB4-6137-4D11-A699-DD20C4C58214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,10 @@ Global
 		{5E784ABD-8166-49CB-A521-EE7518184BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E784ABD-8166-49CB-A521-EE7518184BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E784ABD-8166-49CB-A521-EE7518184BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A02AB4-6137-4D11-A699-DD20C4C58214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A02AB4-6137-4D11-A699-DD20C4C58214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A02AB4-6137-4D11-A699-DD20C4C58214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A02AB4-6137-4D11-A699-DD20C4C58214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +75,7 @@ Global
 		{82390D8B-66AF-45A3-8C17-E8B12FF99872} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 		{AA6F4D62-3C5D-4503-84D7-EFCE1153BB41} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 		{5E784ABD-8166-49CB-A521-EE7518184BA4} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
+		{E1A02AB4-6137-4D11-A699-DD20C4C58214} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
