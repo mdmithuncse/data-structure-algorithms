@@ -4,10 +4,6 @@ namespace TwoSumArray
 {
     class Program
     {
-        // nums = [2,7,11,15], target = 9
-        // nums = [3,2,4], target = 6
-        // nums = [3,3], target = 6
-
         static void Main(string[] args)
         {
             int[] input = new int[] { 1, 10, 11, 15, 2, 19, 20, 22, 3, 8, 5, 7 };
