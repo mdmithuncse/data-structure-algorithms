@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompleteBinaryTree", "Algor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Research", "Research", "{957DE092-05BD-49BC-B77F-41D5CFA2FC5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSumArray", "Research\TwoSumArray\TwoSumArray.csproj", "{E1A02AB4-6137-4D11-A699-DD20C4C58214}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSumArray", "Research\TwoSumArray\TwoSumArray.csproj", "{E1A02AB4-6137-4D11-A699-DD20C4C58214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestElementArray", "Research\LargestElementArray\LargestElementArray.csproj", "{4AF83343-F04A-4CA1-ACA2-36B21E92E929}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{E1A02AB4-6137-4D11-A699-DD20C4C58214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1A02AB4-6137-4D11-A699-DD20C4C58214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1A02AB4-6137-4D11-A699-DD20C4C58214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF83343-F04A-4CA1-ACA2-36B21E92E929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF83343-F04A-4CA1-ACA2-36B21E92E929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF83343-F04A-4CA1-ACA2-36B21E92E929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF83343-F04A-4CA1-ACA2-36B21E92E929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{AA6F4D62-3C5D-4503-84D7-EFCE1153BB41} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 		{5E784ABD-8166-49CB-A521-EE7518184BA4} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 		{E1A02AB4-6137-4D11-A699-DD20C4C58214} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{4AF83343-F04A-4CA1-ACA2-36B21E92E929} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
