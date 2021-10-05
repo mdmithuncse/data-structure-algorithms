@@ -41,7 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumeratorDenominator", "Res
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayManipulation", "Research\ArrayManipulation\ArrayManipulation.csproj", "{D207F49D-0A3A-41CA-A436-1EB21852A71B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindNextHigherNumberWithSameDigits", "Research\FindNextHigherNumberWithSameDigits\FindNextHigherNumberWithSameDigits.csproj", "{34BABBB3-72CA-4CFD-AD17-1CAFE665FAFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindNextHigherNumberWithSameDigits", "Research\FindNextHigherNumberWithSameDigits\FindNextHigherNumberWithSameDigits.csproj", "{34BABBB3-72CA-4CFD-AD17-1CAFE665FAFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertFrom12To24HoursFormat", "Research\ConvertFrom12To24HoursFormat\ConvertFrom12To24HoursFormat.csproj", "{244A45DA-4EE5-4DB7-AC1C-99C669FE7EEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGorilla", "Research\TestGorilla\TestGorilla.csproj", "{30C583B5-C440-41EF-B992-0ED9B73BC1BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +121,14 @@ Global
 		{34BABBB3-72CA-4CFD-AD17-1CAFE665FAFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34BABBB3-72CA-4CFD-AD17-1CAFE665FAFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34BABBB3-72CA-4CFD-AD17-1CAFE665FAFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{244A45DA-4EE5-4DB7-AC1C-99C669FE7EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244A45DA-4EE5-4DB7-AC1C-99C669FE7EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244A45DA-4EE5-4DB7-AC1C-99C669FE7EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244A45DA-4EE5-4DB7-AC1C-99C669FE7EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C583B5-C440-41EF-B992-0ED9B73BC1BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C583B5-C440-41EF-B992-0ED9B73BC1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C583B5-C440-41EF-B992-0ED9B73BC1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C583B5-C440-41EF-B992-0ED9B73BC1BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +151,8 @@ Global
 		{733FDCCD-841B-4F94-8529-3A2D5B7DD16F} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{D207F49D-0A3A-41CA-A436-1EB21852A71B} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{34BABBB3-72CA-4CFD-AD17-1CAFE665FAFD} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{244A45DA-4EE5-4DB7-AC1C-99C669FE7EEB} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{30C583B5-C440-41EF-B992-0ED9B73BC1BD} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
