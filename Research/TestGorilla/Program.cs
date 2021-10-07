@@ -8,7 +8,7 @@ namespace TestGorilla
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            string input = "11111111";
+            string input = "abbcd1";
             bool result1 = CheckLength(input);
             bool result2 = CheckUnique(input);
             bool result3 = CheckDigit(input);
@@ -20,6 +20,7 @@ namespace TestGorilla
         {
             var max = 0;
             var count = 0;
+
             for (var i = 0; i <= input.Length - 1; i++)
             {
                 if (input[i] == 49)
@@ -65,21 +66,14 @@ namespace TestGorilla
                 return false;
             }
 
-            string value1 = string.Empty;
-            string value2 = string.Empty;
-
             for (int i = 0; i < input.Length; i++)
             {
-                value1 = input.Substring(i, 1);
-
-                for (int j = 0; j < input.Length; j++)
+                for (int j = i + 1; j < input.Length; j++)
                 {
-                    value2 = input.Substring(j, 1);
-
-                    if ((value1 == value2) && (i != j))
+                    if (input[i] == input[j])
                     {
                         return false;
-                    }   
+                    }
                 }
             }
 
@@ -91,15 +85,22 @@ namespace TestGorilla
             if (string.IsNullOrWhiteSpace(input))
                 return false;
 
-            foreach (char character in input)
+            bool isDigit = false;
+
+            for (int i = 0; i < input.Length; i++)
             {
-                if (character < '0' || character > '9')
+                if (input[i] == 48 || input[i] == 49 || input[i] == 50 ||
+                    input[i] == 51 || input[i] == 52 || input[i] == 53 ||
+                    input[i] == 54 || input[i] == 55 || input[i] == 56 ||
+                    input[i] == 57)
                 {
-                    return false;
+                    isDigit = true;
+
+                    break;
                 }
             }
 
-            return true;
+            return isDigit;
         }
     }
 }
