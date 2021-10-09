@@ -22,23 +22,29 @@ namespace MedianOfTwoSortedArrays
 
         private static double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
-            int temp;
             int[] tempArray = new int[nums1.Length + nums2.Length];
 
             Array.Copy(nums1, 0, tempArray, 0, nums1.Length);
             Array.Copy(nums2, 0, tempArray, (nums1.Length - 1) + 1, nums2.Length);
 
-            for (int i = 0; i <= tempArray.Length - 2; i++)
+            for (int i = 0; i < tempArray.Length - 1; i++)
             {
-                for (int j = 0; j <= tempArray.Length - 2; j++)
+                bool swapped = false;
+
+                for (int j = 0; j < tempArray.Length - i - 1; j++)
                 {
-                    if (tempArray[i] > tempArray[i+1])
+                    if (tempArray[j] > tempArray[j + 1])
                     {
-                        temp = tempArray[i];
-                        tempArray[i] = tempArray[i + 1];
-                        tempArray[i + 1] = temp;
+                        int temp = tempArray[j];
+                        tempArray[j] = tempArray[j + 1];
+                        tempArray[j + 1] = temp;
+
+                        swapped = true;
                     }
                 }
+
+                if (!swapped)
+                    break;
             }
 
             return 0.00;
