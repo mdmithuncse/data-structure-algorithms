@@ -47,9 +47,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertFrom12To24HoursForma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestGorilla", "Research\TestGorilla\TestGorilla.csproj", "{30C583B5-C440-41EF-B992-0ED9B73BC1BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResearchCode", "Research\ResearchCode\ResearchCode.csproj", "{28B87BE4-72CE-45DA-A3DD-052BBE405288}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResearchCode", "Research\ResearchCode\ResearchCode.csproj", "{28B87BE4-72CE-45DA-A3DD-052BBE405288}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedianOfTwoSortedArrays", "Research\MedianOfTwoSortedArrays\MedianOfTwoSortedArrays.csproj", "{0FA66345-97BC-4D5E-866F-E1CC304210CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedianOfTwoSortedArrays", "Research\MedianOfTwoSortedArrays\MedianOfTwoSortedArrays.csproj", "{0FA66345-97BC-4D5E-866F-E1CC304210CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "Algorithms\BubbleSort\BubbleSort.csproj", "{81EC756F-CECF-4DD1-B393-D008767DEFCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{0FA66345-97BC-4D5E-866F-E1CC304210CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FA66345-97BC-4D5E-866F-E1CC304210CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FA66345-97BC-4D5E-866F-E1CC304210CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EC756F-CECF-4DD1-B393-D008767DEFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EC756F-CECF-4DD1-B393-D008767DEFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EC756F-CECF-4DD1-B393-D008767DEFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EC756F-CECF-4DD1-B393-D008767DEFCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +173,7 @@ Global
 		{30C583B5-C440-41EF-B992-0ED9B73BC1BD} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{28B87BE4-72CE-45DA-A3DD-052BBE405288} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{0FA66345-97BC-4D5E-866F-E1CC304210CD} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{81EC756F-CECF-4DD1-B393-D008767DEFCD} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
