@@ -7,17 +7,35 @@ namespace MedianOfTwoSortedArrays
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            // Input: nums1 = [1,3], nums2 = [2]
-            // Input: nums1 = [1,2], nums2 = [3,4]
-            // Input: nums1 = [0,0], nums2 = [0,0]
-            // Input: nums1 = [], nums2 = [1]
-            // nums1 = [2], nums2 = []
+
+            // Test sucess
             int[] nums1 = new int[2] { 1, 3 };
             int[] nums2 = new int[1] { 2 };
+            // Median is: 2.00000
 
-            var result = FindMedianSortedArrays(nums1, nums2);
+            // Test success
+            //int[] nums1 = new int[2] { 1, 2 };
+            //int[] nums2 = new int[2] { 3, 4 };
+            // Median is: 2.50000
 
-            Console.WriteLine($"The output is: {result}");
+            // Test failed
+            //int[] nums1 = new int[2] { 0, 0 };
+            //int[] nums2 = new int[2] { 0, 0 };
+            // Median is: 0.00000
+
+            // Test success
+            //int[] nums1 = new int[] { };
+            //int[] nums2 = new int[1] { 1 };
+            // Median is: 1.00000
+
+            // Test failed
+            //int[] nums1 = new int[1] { 2 };
+            //int[] nums2 = new int[] { };
+            // Median is: 2.00000
+
+            double result = FindMedianSortedArrays(nums1, nums2);
+
+            Console.WriteLine($"The output is: {(double)result}");
         }
 
         private static double FindMedianSortedArrays(int[] nums1, int[] nums2)
@@ -47,7 +65,24 @@ namespace MedianOfTwoSortedArrays
                     break;
             }
 
-            return 0.00;
+            double medianValue = 0;
+
+            if (tempArray.Length % 2 == 0)
+            {
+                // count is even, need to get the middle two elements, add them together, then divide by 2
+                int middleElement1 = tempArray[(tempArray.Length / 2) - 1];
+                int middleElement2 = tempArray[tempArray.Length / 2];
+
+                medianValue = (double)(middleElement1 + middleElement2) / 2;
+            }
+
+            else
+            {
+                // count is odd, simply get the middle element.
+                medianValue = tempArray[tempArray.Length / 2];
+            }
+
+            return medianValue;
         }
     }
 }
