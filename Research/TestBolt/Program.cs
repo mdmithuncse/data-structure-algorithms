@@ -9,7 +9,7 @@ namespace TestBolt
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            char[] input = new char[] { 'I', ' ', 'd', 'r', 'i', 'v', 'e', ' ', 'w', 'i', 't', 'h', ' ', 'B', 'o', 'l', 't' };
+            char[] input = new char[] { 'W', 'e', ' ', 'd', 'r', 'i', 'v', 'e', ' ', 'w', 'i', 't', 'h', ' ', 'B', 'o', 'l', 't', ' ' };
             char[] output = ReverseWords(input);
             Console.WriteLine($"The result is:");
         }
