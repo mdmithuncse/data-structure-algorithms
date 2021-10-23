@@ -9,7 +9,7 @@ namespace TestTessian
         {
             Console.WriteLine("Hello World!");
 
-            string expression = "+ 1 5";
+            string expression = "+ 1 56";
             string variables = string.Empty;
 
             Console.WriteLine($"Output is: {CalculateExpression(expression, variables)}");
