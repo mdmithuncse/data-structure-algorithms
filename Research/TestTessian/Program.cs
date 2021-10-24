@@ -130,28 +130,5 @@ namespace TestTessian
 
             return stack.Peek();
         }
-
-        //private static bool CheckArithmeticOperators(string expression)
-        //{
-        //    bool result = false;
-
-        //    HashSet<string> arithmeticOperators = new HashSet<string>();
-        //    arithmeticOperators.Add("+");
-        //    arithmeticOperators.Add("-");
-        //    arithmeticOperators.Add("*");
-        //    arithmeticOperators.Add("/");
-
-        //    for (int i = 0; i < expression.Length; i++)
-        //    {
-        //        if (arithmeticOperators.Contains(expression[i]))
-        //        {
-        //            result = true;
-
-        //            break;
-        //        }
-        //    }
-
-        //    return result;
-        //}
     }
 }
