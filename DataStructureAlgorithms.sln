@@ -59,6 +59,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz", "Research\FizzBu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringManipulation", "Research\StringManipulation\StringManipulation.csproj", "{74BB2344-B77A-4C46-92F7-3F2BB5D622EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseWordInPlaceFromCharacterArray", "Research\ReverseWordInPlaceFromCharacterArray\ReverseWordInPlaceFromCharacterArray.csproj", "{8DE8756C-0DB6-4620-96E9-7B720A664A11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{74BB2344-B77A-4C46-92F7-3F2BB5D622EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74BB2344-B77A-4C46-92F7-3F2BB5D622EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74BB2344-B77A-4C46-92F7-3F2BB5D622EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE8756C-0DB6-4620-96E9-7B720A664A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE8756C-0DB6-4620-96E9-7B720A664A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE8756C-0DB6-4620-96E9-7B720A664A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE8756C-0DB6-4620-96E9-7B720A664A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,6 +201,7 @@ Global
 		{2C96D3B2-30C3-4ABB-A7D9-2653EECF5849} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{46EC12A7-502A-493A-8835-D91D88F89C7D} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{74BB2344-B77A-4C46-92F7-3F2BB5D622EE} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{8DE8756C-0DB6-4620-96E9-7B720A664A11} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
