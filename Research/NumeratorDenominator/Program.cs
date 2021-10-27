@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace NumeratorDenominator
+namespace RepeatingDecimal
 {
     class Program
     {
@@ -8,55 +10,68 @@ namespace NumeratorDenominator
         {
             Console.WriteLine("Hello World!");
 
-            Console.WriteLine($"Result of division: {Repeat(8, 3)}");
+            int numerator = 8;
+            int denominator = 3;
+            Console.WriteLine($"Result of division for {nameof(numerator)} {(numerator)} and {nameof(denominator)} {(denominator)} is : { RepeatingDecimal(numerator, denominator) }");
 
+            numerator = 1;
+            denominator = 2;
+            Console.WriteLine($"Result of division for {nameof(numerator)} {(numerator)} and {nameof(denominator)} {(denominator)} is : { RepeatingDecimal(numerator, denominator) }");
+
+            numerator = 2;
+            denominator = 1;
+            Console.WriteLine($"Result of division for {nameof(numerator)} {(numerator)} and {nameof(denominator)} {(denominator)} is : { RepeatingDecimal(numerator, denominator) }");
+
+            numerator = 2;
+            denominator = 3;
+            Console.WriteLine($"Result of division for {nameof(numerator)} {(numerator)} and {nameof(denominator)} {(denominator)} is : { RepeatingDecimal(numerator, denominator) }");
         }
 
-        static string Repeat(int input1, int input2)
+        static string RepeatingDecimal(int numerator, int denominator)
         {
-            decimal result;
-
-            if (input1 > input2)
-            {
-                result = CalculateResult(input1, input2);
-            }
-
-            else
-            {
-                result = CalculateResult(input2, input1);
-            }
-
-            if (result.ToString().Contains('.'))
-            {
-                return GenerateOutput(result.ToString());
-            }
-
-            return result.ToString();
-        }
-         
-        static string GenerateOutput(string input)
-        {
-            string output;
-            string[] tempArray = input.Split('.');
-            string temp = tempArray[1];
-            output = $"{tempArray[0]}.(";
+            if (numerator == 0) return "0";
             
-            for (int i = 0; i < temp.Length; i++)
+            StringBuilder sb = new StringBuilder();
+
+            if ((numerator < 0 && denominator > 0) ||
+                (numerator > 0 && denominator < 0))
             {
-                if (!output.Contains(temp[i]))
-                {
-                    output += temp[i];
-                }
+                sb.Append("-");
             }
 
-            output += ")";
+            long divisor = Math.Abs((long)numerator);
+            long dividend = Math.Abs((long)denominator);
+            long remainder = divisor % dividend;
+            long quotient = divisor / dividend;
+            sb.Append(quotient);
 
-            return output;
-        }
+            if (remainder == 0)
+            {
+                return sb.ToString();
+            }
 
-        static decimal CalculateResult(int numerator, int denominator)
-        {
-            return (decimal) numerator / denominator;
+            sb.Append(".");
+            Dictionary<long, int> map = new Dictionary<long, int>();
+
+            while (remainder != 0)
+            {
+                if (map.ContainsKey(remainder))
+                {
+                    int length = map.GetValueOrDefault(remainder);
+                    sb.Insert(length, "(");
+                    sb.Append(")");
+
+                    break;
+                }
+
+                map.Add(remainder, sb.Length);
+                remainder *= 10;
+                quotient = remainder / dividend;
+                sb.Append(quotient);
+                remainder %= dividend;
+            }
+
+            return sb.ToString();
         }
     }
 }
