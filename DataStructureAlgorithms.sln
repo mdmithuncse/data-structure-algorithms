@@ -59,6 +59,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringManipulation", "Resea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseWordInPlaceFromCharacterArray", "Research\ReverseWordInPlaceFromCharacterArray\ReverseWordInPlaceFromCharacterArray.csproj", "{8DE8756C-0DB6-4620-96E9-7B720A664A11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidParentheses", "Research\ValidParentheses\ValidParentheses.csproj", "{C52D1BA7-C69B-44A6-B2B9-4251D6413C28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{8DE8756C-0DB6-4620-96E9-7B720A664A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DE8756C-0DB6-4620-96E9-7B720A664A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DE8756C-0DB6-4620-96E9-7B720A664A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C52D1BA7-C69B-44A6-B2B9-4251D6413C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C52D1BA7-C69B-44A6-B2B9-4251D6413C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C52D1BA7-C69B-44A6-B2B9-4251D6413C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C52D1BA7-C69B-44A6-B2B9-4251D6413C28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,6 +201,7 @@ Global
 		{46EC12A7-502A-493A-8835-D91D88F89C7D} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{74BB2344-B77A-4C46-92F7-3F2BB5D622EE} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{8DE8756C-0DB6-4620-96E9-7B720A664A11} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{C52D1BA7-C69B-44A6-B2B9-4251D6413C28} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
