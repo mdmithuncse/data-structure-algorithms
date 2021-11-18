@@ -67,9 +67,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesFromSortedA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchingElementFromAtLeastTwoArray", "Research\MatchingElementFromAtLeastTwoArray\MatchingElementFromAtLeastTwoArray.csproj", "{2BE8C801-7AC5-49D7-86BC-21223FC8C2AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "Algorithms\BinarySearch\BinarySearch.csproj", "{E814B7C7-0411-466E-B97E-313BC5097C5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearch", "Algorithms\BinarySearch\BinarySearch.csproj", "{E814B7C7-0411-466E-B97E-313BC5097C5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindBoundaryOfBooleanArrayUsingBinarySearch", "Research\FindBoundaryOfBooleanArrayUsingBinarySearch\FindBoundaryOfBooleanArrayUsingBinarySearch.csproj", "{EBD35669-8C0F-464C-8AC8-95F897CA1FE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindBoundaryOfBooleanArrayUsingBinarySearch", "Research\FindBoundaryOfBooleanArrayUsingBinarySearch\FindBoundaryOfBooleanArrayUsingBinarySearch.csproj", "{EBD35669-8C0F-464C-8AC8-95F897CA1FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReversePolishNotation", "Research\ReversePolishNotation\ReversePolishNotation.csproj", "{50F3F3A9-4F13-4B79-ACF6-ECAA7A632AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{EBD35669-8C0F-464C-8AC8-95F897CA1FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBD35669-8C0F-464C-8AC8-95F897CA1FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBD35669-8C0F-464C-8AC8-95F897CA1FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F3F3A9-4F13-4B79-ACF6-ECAA7A632AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F3F3A9-4F13-4B79-ACF6-ECAA7A632AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F3F3A9-4F13-4B79-ACF6-ECAA7A632AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F3F3A9-4F13-4B79-ACF6-ECAA7A632AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -237,6 +243,7 @@ Global
 		{2BE8C801-7AC5-49D7-86BC-21223FC8C2AF} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{E814B7C7-0411-466E-B97E-313BC5097C5F} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 		{EBD35669-8C0F-464C-8AC8-95F897CA1FE0} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{50F3F3A9-4F13-4B79-ACF6-ECAA7A632AD5} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
