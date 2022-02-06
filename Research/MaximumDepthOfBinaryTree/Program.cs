@@ -28,13 +28,15 @@ namespace MaximumDepthOfBinaryTree
     /// </summary>
     public class TreeNode
     {
-        private int val;
+        public int val;
         public TreeNode left;
         public TreeNode right;
 
-        public TreeNode(int x)
+        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
         {
-            val = x;
+            this.val = val;
+            this.left = left;
+            this.right = right;
         }
     }
 }
