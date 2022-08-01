@@ -38,7 +38,7 @@ namespace BinarySearch
                 }
             }
 
-            // if we get here we didn't hit above return so we didn't find target
+            // if we get here we didn't hit above return -1 so we didn't find target
             return -1;
         }
     }
