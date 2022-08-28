@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "DataStructure\Stac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "DataStructure\Queue\Queue.csproj", "{B3A826DF-15CD-488A-8267-8EA203B15C48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleQueue", "DataStructure\SimpleQueue\SimpleQueue.csproj", "{79896E36-41B2-478E-8171-C459B199C978}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -249,6 +251,10 @@ Global
 		{B3A826DF-15CD-488A-8267-8EA203B15C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3A826DF-15CD-488A-8267-8EA203B15C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3A826DF-15CD-488A-8267-8EA203B15C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79896E36-41B2-478E-8171-C459B199C978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79896E36-41B2-478E-8171-C459B199C978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79896E36-41B2-478E-8171-C459B199C978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79896E36-41B2-478E-8171-C459B199C978}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -293,6 +299,7 @@ Global
 		{01238815-EC99-46E2-A6EC-9D26DADA3DC5} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 		{00798ADF-632C-4DCD-844F-896B32E1A76A} = {45571775-036A-41BE-960D-82D5D33A2B35}
 		{B3A826DF-15CD-488A-8267-8EA203B15C48} = {45571775-036A-41BE-960D-82D5D33A2B35}
+		{79896E36-41B2-478E-8171-C459B199C978} = {45571775-036A-41BE-960D-82D5D33A2B35}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
