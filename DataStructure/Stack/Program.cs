@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StackDataStructure
+namespace Stack
 {
     class Program
     {
