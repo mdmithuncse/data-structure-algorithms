@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace QueueDataStructure
+namespace Queue
 {
     class Program
     {

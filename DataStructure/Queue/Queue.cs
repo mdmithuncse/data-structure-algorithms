@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QueueDataStructure
+namespace Queue
 {
     public class Queue
     {
@@ -20,7 +20,7 @@ namespace QueueDataStructure
             front = -1;
             rear = -1;
             capacity = size;
-        }       
+        }
 
         // Add an item into queue
         public void Enqueue(int item)
@@ -38,7 +38,7 @@ namespace QueueDataStructure
                 rear++;
                 items[rear] = item;
             }
-            
+
             Console.WriteLine($"Added item: {item}");
         }
 
@@ -76,7 +76,7 @@ namespace QueueDataStructure
         // Check queue is empty
         public bool IsEmpty()
         {
-            if (front == -1 && rear == - 1)
+            if (front == -1 && rear == -1)
             {
                 return true;
             }
