@@ -75,6 +75,7 @@ namespace CraneMovingPackageProblem
                     ranges[i + 1] = position[j] + arm[j];
                     j++;
 
+                    // Break to stop loop after one iteration
                     break;
                 }
 
