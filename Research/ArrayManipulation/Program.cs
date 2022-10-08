@@ -72,6 +72,17 @@ namespace ArrayManipulation
             };
 
             PrintFourDimensionalArray(strInput2);
+
+            int[][] jaggedArray =
+            {
+                new int[] { 1, 3 },
+                new int[] { 2, 6 },
+                new int[] { 8, 10 },
+                new int[] { 15, 18 }
+            };
+
+            PrintJaggedArray(jaggedArray);
+            ReplaceJaggedArray(jaggedArray);
         }
 
         public static void PrintSingleDimensionalArray(int[] input)
@@ -148,6 +159,40 @@ namespace ArrayManipulation
                             Console.WriteLine($"Array[{i}, {j}, {k}, {l}] ==> {input[i, j, k, l]}");
                         }
                     }
+                }
+            }
+        }
+
+        public static void PrintJaggedArray(int[][] input)
+        {
+            if (input.Length == 0)
+            {
+                Console.WriteLine($"There is no element in array {nameof(input)}");
+            }
+
+            for(int i = 0; i < input.Length; i++)
+            {
+                for(int j = 0; j < input[i].Length; j++)
+                {
+                    Console.WriteLine($"[{i}, {j}] = {input[i][j]}");
+                }
+            }
+        }
+
+        public static void ReplaceJaggedArray(int[][] input)
+        {
+            if (input.Length == 0)
+            {
+                Console.WriteLine($"There is no element in array {nameof(input)}");
+            }
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                for (int j = 0; j < input[i].Length; j++)
+                {
+                    Console.WriteLine($"Old Values: [{i}, {j}] = {input[i][j]}");
+                    input[i][j] = input[j][i];
+                    Console.WriteLine($"New Values: [{i}, {j}] = {input[i][j]}");
                 }
             }
         }
