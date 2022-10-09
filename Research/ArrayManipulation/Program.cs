@@ -188,10 +188,14 @@ namespace ArrayManipulation
 
             for (int i = 0; i < input.Length; i++)
             {
-                for (int j = 0; j < input[i].Length; j++)
+                for (int j = 0; j < input[i].Length - 1; j++)
                 {
                     Console.WriteLine($"Old Values: [{i}, {j}] = {input[i][j]}");
-                    input[i][j] = input[j][i];
+
+                    int temp = input[i][j + 1];
+                    input[i][j + 1] = input[i][j];
+                    input[i][j] = temp;
+
                     Console.WriteLine($"New Values: [{i}, {j}] = {input[i][j]}");
                 }
             }
