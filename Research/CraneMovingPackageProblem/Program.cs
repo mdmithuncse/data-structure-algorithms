@@ -9,80 +9,89 @@ namespace CraneMovingPackageProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            int[] position = { 3, 6, 10 };
-            int[] arm = { 3, 2, 1 };
-            int source = 7;
-            int destination = 0;
+
+            //int[] position = { 3, 6, 10 };
+            //int[] arm = { 3, 2, 1 };
+            //int source = 7;
+            //int destination = 0;
+
+            //int[] position = { 5, 1 };
+            //int[] arm = { 2, 1 };
+            //int source = 3;
+            //int destination = 6;
+
+            //int[] position = { 5, 1 };
+            //int[] arm = { 2, 1 };
+            //int source = 2;
+            //int destination = 6;
+
+            int[] position = { 10, 4, 7 };
+            int[] arm = { 1, 4, 2 };
+            int source = 11;
+            int destination = 1;
 
             Console.WriteLine($"Result is: {IsMovable(position, arm, source, destination)}");
         }
 
         static bool IsMovable(int[] position, int[] arm, int source, int destination)
         {
-            int[] ranges = BuildArrayRange(position, arm);
+            IList<int[]> ranges = BuildRange(position, arm);
+            IList<int[]> merged = MergeRange(ranges);
 
-            if (IsOverlapped(ranges))
+            for(int i = 0; i < merged.Count; i++)
             {
-                if ((source >= ranges[0] || destination  >= ranges[0]) && 
-                    (source <= ranges[ranges.Length - 1] || destination <= ranges[ranges.Length - 1]))
+                if (destination > source)
                 {
-                    return true;
+                    if (source >= merged[i][0] && destination <= merged[i][1])
+                    {
+                        return true;
+                    }
                 }
-            }
 
-            else
-            {
-                // Todo:
+                else if (source > destination)
+                {
+                    if (source <= merged[i][1] && destination >= merged[i][0])
+                    {
+                        return true;
+                    }
+                }
             }
 
             return false;
         }
 
-        static bool IsOverlapped(int[] input)
+        static IList<int[]> BuildRange(int[] position, int[] arm)
         {
-            bool result = false;
+            IList<int[]> ranges = new List<int[]>();
 
-            for (int i = 0; i < input.Length; i+=2)
+            for(int i = 0; i < position.Length; i++)
             {
-                if (input[i + 1] >= input[i + 2])
-                {
-                    result = true;
+                ranges.Add(new int[] { position[i] - arm[i], position[i] + arm[i] });
+            }
 
-                    continue;
+            return ranges;
+        }
+
+        static IList<int[]> MergeRange(IList<int[]> ranges)
+        {
+            ranges = ranges.OrderBy(x => x[0]).ToList();
+
+            IList<int[]> merged = new List<int[]>();
+
+            for (int i = 0; i < ranges.Count; i++)
+            {
+                if (!merged.Any() || merged.Last()[1] < ranges[i][0])
+                {
+                    merged.Add(new int[] { ranges[i][0], ranges[i][1] });
                 }
 
                 else
                 {
-                    result = false;
-
-                    break;
+                    merged.Last()[1] = Math.Max(merged.Last()[1], ranges[i][1]);
                 }
             }
 
-            return result;
-        }
-
-        static int[] BuildArrayRange(int[] position, int[] arm)
-        {
-            int j = 0;
-            int[] ranges = new int[position.Length * 2];
-
-            for (int i = 0; i < ranges.Length;)
-            {
-                while (j < position.Length)
-                {
-                    ranges[i] = position[j] - arm[j];
-                    ranges[i + 1] = position[j] + arm[j];
-                    j++;
-
-                    // Break to stop loop after one iteration
-                    break;
-                }
-
-                i+=2;
-            }
-
-            return ranges;
+            return merged;
         }
     }
 }
