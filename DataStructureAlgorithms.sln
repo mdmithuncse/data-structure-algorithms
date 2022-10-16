@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveElementFromArray", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeOverlappingIntervalsArray", "Research\MergeOverlappingIntervalsArray\MergeOverlappingIntervalsArray.csproj", "{B5DFA8B9-EB43-45C4-B204-1BC33FC7225C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareOfASortedArray", "Research\SquareOfASortedArray\SquareOfASortedArray.csproj", "{E16E867D-B108-4260-8D13-282F8ED636C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -279,6 +281,10 @@ Global
 		{B5DFA8B9-EB43-45C4-B204-1BC33FC7225C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5DFA8B9-EB43-45C4-B204-1BC33FC7225C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5DFA8B9-EB43-45C4-B204-1BC33FC7225C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16E867D-B108-4260-8D13-282F8ED636C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16E867D-B108-4260-8D13-282F8ED636C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16E867D-B108-4260-8D13-282F8ED636C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16E867D-B108-4260-8D13-282F8ED636C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -328,6 +334,7 @@ Global
 		{E86813F2-4B86-4D1F-A7A7-DDB7F372D182} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{60780641-FA6C-4614-8FE7-6EE55D8B28DA} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{B5DFA8B9-EB43-45C4-B204-1BC33FC7225C} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{E16E867D-B108-4260-8D13-282F8ED636C0} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
