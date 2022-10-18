@@ -11,21 +11,20 @@ namespace RemoveDuplicatesFromSortedArray
             Console.WriteLine($"Output is: {RemoveDuplicates(input)}");
         }
 
-        public static int RemoveDuplicates(int[] nums)
+        static int RemoveDuplicates(int[] nums)
         {
-            if (nums.Length == 0) return 0;
-            int i = 0;
+            int insertIndex = 1;
 
-            for (int j = 1; j < nums.Length; j++)
+            for (int i = 1; i < nums.Length; i++)
             {
-                if (nums[j] != nums[i])
+                if (nums[i - 1] != nums[i])
                 {
-                    i++;
-                    nums[i] = nums[j];
+                    nums[insertIndex] = nums[i];
+                    insertIndex++;
                 }
             }
 
-            return i + 1;
+            return insertIndex;
         }
     }
 }
