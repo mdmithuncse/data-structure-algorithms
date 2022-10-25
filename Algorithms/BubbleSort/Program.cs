@@ -7,7 +7,7 @@ namespace BubbleSort
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            int[] input = new int[5] { -2, 45, 0, 11, -9 };
+            int[] input = new int[5] { 78, 55, 45, 98, 13 };
             //int[] input = new int[3] { 1, 3, 2 };
             Console.WriteLine("Bubble sorted array:");
             foreach (var item in BubbleSort(input))
