@@ -14,9 +14,9 @@ namespace ThirdMaximumNumber
 
         static int ThirdMax(int[] nums)
         {
-            KeyValuePair<int, bool> firstMax = new KeyValuePair<int, bool>(-1, false);
-            KeyValuePair<int, bool> secondMax = new KeyValuePair<int, bool>(-1, false);
-            KeyValuePair<int, bool> thirdMax = new KeyValuePair<int, bool>(-1, false);
+            KeyValuePair<long, bool> firstMax = new KeyValuePair<long, bool>(long.MinValue, false);
+            KeyValuePair<long, bool> secondMax = new KeyValuePair<long, bool>(long.MinValue, false);
+            KeyValuePair<long, bool> thirdMax = new KeyValuePair<long, bool>(long.MinValue, false);
 
             for (int i = 0; i < nums.Length; i++)
             {
@@ -27,25 +27,25 @@ namespace ThirdMaximumNumber
                 {
                     thirdMax = secondMax;
                     secondMax = firstMax;
-                    firstMax = new KeyValuePair<int, bool>(nums[i], true);
+                    firstMax = new KeyValuePair<long, bool>(nums[i], true);
                 }
 
                 else if (!secondMax.Value || secondMax.Key <= nums[i])
                 {
                     thirdMax = secondMax;
-                    secondMax = new KeyValuePair<int, bool>(nums[i], true);
+                    secondMax = new KeyValuePair<long, bool>(nums[i], true);
                 }
 
                 else if(!thirdMax.Value || thirdMax.Key <= nums[i])
                 {
-                    thirdMax = new KeyValuePair<int, bool>(nums[i], true);
+                    thirdMax = new KeyValuePair<long, bool>(nums[i], true);
                 }
             }
 
             if (!thirdMax.Value)
-                return firstMax.Key;
+                return (int)firstMax.Key;
 
-            return thirdMax.Key;
+            return (int)thirdMax.Key;
         }
     }
 }
