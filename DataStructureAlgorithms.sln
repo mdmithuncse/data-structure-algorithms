@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdMaximumNumber", "Resea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllNumbersDisappearedInAnArray", "Research\FindAllNumbersDisappearedInAnArray\FindAllNumbersDisappearedInAnArray.csproj", "{F5826166-486E-4EE0-9DA3-E0AA06CB5223}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "Algorithms\MergeSort\MergeSort.csproj", "{C784217C-9805-4D13-90DD-59C1BDB01A4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -321,6 +323,10 @@ Global
 		{F5826166-486E-4EE0-9DA3-E0AA06CB5223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5826166-486E-4EE0-9DA3-E0AA06CB5223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5826166-486E-4EE0-9DA3-E0AA06CB5223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C784217C-9805-4D13-90DD-59C1BDB01A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C784217C-9805-4D13-90DD-59C1BDB01A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C784217C-9805-4D13-90DD-59C1BDB01A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C784217C-9805-4D13-90DD-59C1BDB01A4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -377,6 +383,7 @@ Global
 		{1361B06E-166F-40BF-B011-8F6552D90776} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{2C6EC42E-7936-4733-85A6-A8E949A81D96} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{F5826166-486E-4EE0-9DA3-E0AA06CB5223} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{C784217C-9805-4D13-90DD-59C1BDB01A4A} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
