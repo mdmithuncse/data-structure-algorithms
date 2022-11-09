@@ -107,15 +107,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReplaceElementsWithGreatest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoveZerosToEnd", "Research\MoveZerosToEnd\MoveZerosToEnd.csproj", "{1361B06E-166F-40BF-B011-8F6552D90776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdMaximumNumber", "Research\ThirdMaximumNumber\ThirdMaximumNumber.csproj", "{2C6EC42E-7936-4733-85A6-A8E949A81D96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdMaximumNumber", "Research\ThirdMaximumNumber\ThirdMaximumNumber.csproj", "{2C6EC42E-7936-4733-85A6-A8E949A81D96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllNumbersDisappearedInAnArray", "Research\FindAllNumbersDisappearedInAnArray\FindAllNumbersDisappearedInAnArray.csproj", "{F5826166-486E-4EE0-9DA3-E0AA06CB5223}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindAllNumbersDisappearedInAnArray", "Research\FindAllNumbersDisappearedInAnArray\FindAllNumbersDisappearedInAnArray.csproj", "{F5826166-486E-4EE0-9DA3-E0AA06CB5223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "Algorithms\MergeSort\MergeSort.csproj", "{C784217C-9805-4D13-90DD-59C1BDB01A4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergeSort", "Algorithms\MergeSort\MergeSort.csproj", "{C784217C-9805-4D13-90DD-59C1BDB01A4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumNumberOfWordsFoundInSentences", "Research\NumberOfGoodPairs\MaximumNumberOfWordsFoundInSentences.csproj", "{B6B79FB5-2F04-48F0-8102-3EBCAAFD9FD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumNumberOfWordsFoundInSentences", "Research\NumberOfGoodPairs\MaximumNumberOfWordsFoundInSentences.csproj", "{B6B79FB5-2F04-48F0-8102-3EBCAAFD9FD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindPivotIndex", "Research\FindPivotIndex\FindPivotIndex.csproj", "{C23438B4-C23D-4835-8D53-C44E942166B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindPivotIndex", "Research\FindPivotIndex\FindPivotIndex.csproj", "{C23438B4-C23D-4835-8D53-C44E942166B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiralMatrix", "Research\SpiralMatrix\SpiralMatrix.csproj", "{3D63917A-2226-41D2-9919-508F73FBFF05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -339,6 +341,10 @@ Global
 		{C23438B4-C23D-4835-8D53-C44E942166B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C23438B4-C23D-4835-8D53-C44E942166B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C23438B4-C23D-4835-8D53-C44E942166B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D63917A-2226-41D2-9919-508F73FBFF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D63917A-2226-41D2-9919-508F73FBFF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D63917A-2226-41D2-9919-508F73FBFF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D63917A-2226-41D2-9919-508F73FBFF05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -398,6 +404,7 @@ Global
 		{C784217C-9805-4D13-90DD-59C1BDB01A4A} = {FDB2AF60-615B-4FF7-BE85-4ECE8D7CD2A1}
 		{B6B79FB5-2F04-48F0-8102-3EBCAAFD9FD8} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{C23438B4-C23D-4835-8D53-C44E942166B0} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{3D63917A-2226-41D2-9919-508F73FBFF05} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
