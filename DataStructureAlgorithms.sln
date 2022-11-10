@@ -117,7 +117,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumNumberOfWordsFoundIn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindPivotIndex", "Research\FindPivotIndex\FindPivotIndex.csproj", "{C23438B4-C23D-4835-8D53-C44E942166B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiralMatrix", "Research\SpiralMatrix\SpiralMatrix.csproj", "{3D63917A-2226-41D2-9919-508F73FBFF05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpiralMatrix", "Research\SpiralMatrix\SpiralMatrix.csproj", "{3D63917A-2226-41D2-9919-508F73FBFF05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PascalTriangle", "Research\PascalTriangle\PascalTriangle.csproj", "{60B766E6-C3F0-484B-B499-702EAE41436F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -345,6 +347,10 @@ Global
 		{3D63917A-2226-41D2-9919-508F73FBFF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D63917A-2226-41D2-9919-508F73FBFF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D63917A-2226-41D2-9919-508F73FBFF05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B766E6-C3F0-484B-B499-702EAE41436F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B766E6-C3F0-484B-B499-702EAE41436F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B766E6-C3F0-484B-B499-702EAE41436F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B766E6-C3F0-484B-B499-702EAE41436F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -405,6 +411,7 @@ Global
 		{B6B79FB5-2F04-48F0-8102-3EBCAAFD9FD8} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{C23438B4-C23D-4835-8D53-C44E942166B0} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{3D63917A-2226-41D2-9919-508F73FBFF05} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{60B766E6-C3F0-484B-B499-702EAE41436F} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
