@@ -127,6 +127,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factorial", "Research\Facto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber", "Research\PrimeNumber\PrimeNumber.csproj", "{34D890C4-B8F9-42D3-99C1-B2F8E70E0B76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciSeries", "Research\FibonacciSeries\FibonacciSeries.csproj", "{D25F6032-2CCC-4540-89CA-01ACF5789069}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -369,6 +371,10 @@ Global
 		{34D890C4-B8F9-42D3-99C1-B2F8E70E0B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D890C4-B8F9-42D3-99C1-B2F8E70E0B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D890C4-B8F9-42D3-99C1-B2F8E70E0B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25F6032-2CCC-4540-89CA-01ACF5789069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25F6032-2CCC-4540-89CA-01ACF5789069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25F6032-2CCC-4540-89CA-01ACF5789069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25F6032-2CCC-4540-89CA-01ACF5789069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -433,6 +439,7 @@ Global
 		{7EDBA2B9-4F4C-469C-8D72-43C3505D2DC9} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{92A1EC0D-3D53-48FF-A90A-3B2E207205D6} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 		{34D890C4-B8F9-42D3-99C1-B2F8E70E0B76} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
+		{D25F6032-2CCC-4540-89CA-01ACF5789069} = {957DE092-05BD-49BC-B77F-41D5CFA2FC5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A84AF0D-8FD3-4473-BDA0-20782C995591}
